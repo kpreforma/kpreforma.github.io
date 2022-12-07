@@ -1,0 +1,254 @@
+/* 
+Full Name  : Kenneth Reforma
+Student ID#: 144680212
+Date Submitted: 2022-12-05
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments.
+
+----- Add in the end!!! -----
+1. Responsive CSS design using @media
+-----------------------------
+*/
+
+header {
+    font-family: 'Courier', 'Roboto', Arial, sans-serif;
+    font-size: small;
+    text-align: right;
+    background-color: #0f1114;
+    padding: 2em 0 0 0;
+    margin: 0 2em 0.3em 0;
+    color: #414e5f;
+    font-weight: bold;
+}
+body {
+    font-family: 'Consolas', 'Roboto', Arial, sans-serif;
+    color: #adadad;
+    max-width: 1100px;
+    margin: auto;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: #0f1114;
+}
+@media only screen and (max-width: 400px) {
+    body {
+        max-width: 50%;
+    }
+}
+footer {
+    font-family: 'Courier', 'Roboto', Arial, sans-serif;
+    font-size: small;
+    text-align: right;
+    background-color: #0f1114;
+    margin: 0.5em 2em 2em 0;
+    color: #414e5f;
+    font-weight: bold;
+}
+main {
+    margin: auto;
+    background-color: #232931;
+    min-width: 100%;
+    border-radius: 10px;
+    padding: 2rem 0 2rem 0;
+}
+#profName {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 5px 0 0 0;
+    margin: 0;
+}
+#profJobTitle {
+    padding: 0;
+    margin: 0;
+}
+#tblResumeContact {
+    padding-top: 1.5rem;
+    margin: auto;
+}
+.btnResumeContact {
+    font-size: 20px;
+    padding: 11px;
+    margin: 0 15px 0 15px;
+    border-radius: 10px;
+    background-color: #a8a8a8;
+    font-family: 'Consolas';
+    text-decoration: none;
+    color: #141f2c;
+}
+.btnResumeContact:link {
+    font-weight: bold;
+}
+.btnResumeContact:visited {
+    font-weight: bold;
+}
+.btnResumeContact:hover {
+    font-weight: bolder;
+    color: #414e5f;
+}
+
+#profileHeader {
+    padding: 0 0 2em 0;
+    text-align: center;
+}
+#portrait {
+    image-resolution: 600dpi;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #a8a8a8;
+    height: 250px;
+    width: 270px;
+    margin: auto;
+}
+#profileContent {
+    margin: auto;
+    padding: 2em 0 2em 0;
+    background-color: #141f2c;
+}
+#tblBasic {
+    margin: auto;
+    max-width: 80%;
+}
+.tblInfoKey {
+    text-align: right;
+    padding-right: 0.5em;
+    border-right: #a8a8a8;
+    font-weight: bold;
+}
+#tblBasicHead {
+    font-size: 22px;
+    text-align: left;
+    height: 1em;
+    color:rgb(200, 200, 200);
+}
+#profDate {
+    margin: 1em 1em 0 12%;
+}
+#sectionEduc {
+    margin: 0 0 2.5em 0;
+}
+#educTitle {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 1.5em 0 1em 0;
+    color: rgb(200, 200, 200);
+}
+.educCard{
+    margin: 1em 20% 1.5em 20%;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border-radius: 10px;
+    background-color: #1f1d2b;
+    color: #adadad;
+    border-style: solid;
+    border-color: #414e5f;
+}
+.schoolTitle {
+    margin: 0.8em 0 0 0;
+}
+.schoolContent {
+    margin: 0.3em 0 0.8em 1em;
+}
+#sectionSkills {
+    margin: auto;
+    padding: 1em 0 1.5em 0;
+    background-color: #141f2c;
+}
+#skillsTitle {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0 0 0;
+    color: rgb(200, 200, 200);
+}
+#skillsContent{
+    margin: 0 10% 0 10%;
+}
+#sectionContact {
+    margin: auto;
+    padding: 1em 0 2.5em 5em;
+}
+input {
+    border-radius: 5px;
+    height: 20px;
+    width: 300px;
+    font-family: 'Consolas', 'Roboto', Arial, sans-serif;
+    background-color: #ececec;
+    color: #0f1114;
+}
+#headerContact {
+    font-size: 22px;
+}
+#tblContactButtons {
+    margin: 1em 0 0 1em;
+}
+.btnContact {
+    font-size: 17px;
+    height: 45px;
+    width: 180px;
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+    background-color: #a8a8a8;
+    font-family: 'Consolas', 'Roboto', Arial, sans-serif;
+    text-decoration: none;
+    color: #141f2c;
+    font-weight: bold;
+}
+.btnContact:link {
+    font-weight: bold;
+}
+.btnContact:visited {
+    font-weight: bold;
+}
+.btnContact:hover {
+    font-weight: bolder;
+    color: #414e5f;
+}
+#message {
+    height: 100px;
+}
+input[type=radio] {
+    width: 17px;
+}
+input[type=checkbox] {
+    width: 17px;
+}
+label {
+    text-align: left;
+}
+.errorMsg {
+    font-size: 14px;
+    padding: 0 0 0 0.5;
+    font-style: italic;
+    color: rgb(144, 164, 13);
+    margin: 0;
+}
+#message {
+    border-radius: 5px;
+    height: 5rem;
+    width: 300px;
+    font-family: 'Consolas', 'Roboto', Arial, sans-serif;
+    background-color: #ececec;
+    resize: vertical;
+}
+
+#btnSubmit:link {
+    font-weight: bold;
+}
+#btnSubmit:visited {
+    font-weight: bold;
+}
+#btnSubmit:hover {
+    font-weight: bolder;
+    color: #414e5f;
+}
+#btnSubmit:disabled {
+    font-weight: bolder;
+    color: #4c4c4c;
+}
+
+/*for testing*/
+/* tr, td {
+    border-style: solid;
+    border-collapse: collapse;
+} */

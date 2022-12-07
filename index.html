@@ -1,0 +1,229 @@
+<!-- Full Name  : Kenneth Reforma
+Student ID#: 144680212
+Date Submitted: 2022-12-05
+
+Authenticity Declaration:
+I have done all the coding by myself and only copied the code that my
+professor provided to complete my workshops and assignments. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio v0.1: kpr | home</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body onload="clearAll()">
+    <header>portfolio v0.1</header>
+    <main>
+        <div id="profileHeader">
+            <img id="portrait" src="./profile_pic_self.jpg">
+            <h2 id="profName">kreforma</h2>
+            <h3 id="profJobTitle">Data Analyst | Computer Programmer</h3>
+            <table id="tblResumeContact">
+                <tr>
+                    <td><a class="btnResumeContact" href="./CV-KPR_2022.pdf" download>resume</a></td>
+                    <td><a class="btnResumeContact" id="scrollToContact">contact</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="profileContent">
+            <table id="tblBasic">
+                <thead id="tblBasicHead">
+                    <th width="56.5%">About Me and Academic Honesty<hr></th>
+                    <th width="2%"></th>
+                    <th colspan="2">Student Information<hr></th>
+                </thead>
+                <tr>
+                    <td rowspan="6" align="justify">I am Kenneth Reforma, an international student in Seneca College. I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</td>
+                    <td></td>
+                    <td class="tblInfoKey">Age |</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tblInfoKey">Email |</td>
+                    <td>kreforma@myseneca.ca</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tblInfoKey">Language |</td>
+                    <td>English & Filipino</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tblInfoKey">Class Section |</td>
+                    <td>WEB222 NEE</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tblInfoKey">Student ID |</td>
+                    <td>144680212</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="tblInfoKey">Instructor |</td>
+                    <td>Blessing Ajiboye</td>
+                </tr>
+            </table>
+            <div id="profDate">
+                <b>Date | </b> 2022-12-04
+            </div>
+        </div>
+        <div id="sectionEduc">
+            <div id="educTitle">Educational Background<hr width="300px"></div>
+            <div class="educCard">
+                <h3 class="schoolTitle">Seneca College | Target Graduation in Fall 2023</h3>
+                <p class="schoolContent">Diploma, Computer Programming</p>
+            </div>
+            <div class="educCard">
+                <h3 class="schoolTitle">University of the Philippines | Graduated 2015</h3>
+                <p class="schoolContent">Bachelor's Degree, Electrical Engineering
+                    (Major in Electronics Engineering)</p>
+            </div>
+        </div>
+        <div id="sectionSkills">
+            <h3 id="skillsTitle">Skills and Tech Stack<hr width="300px"></h3>
+            <div id="skillsContent">
+                <p>
+                    Forecasting: PLEXOS and ABB Nostradamus | Microsoft Office: Excel, Powerpoint, Word, and Publisher | Teleconferencing: Zoom, Google Meet, Cisco Webex | Electronics Simulation: Multisim and Logisim | Arduino | AutoCAD | Talend Data Studio and Talend Management Console
+                </p>
+                <p>
+                    Data Warehousing: Snowflake and Google Big Query | Data Visualization and Analytics: Power BI, TIBCO Spotfire and Tableau | Project Management: Smartsheet and Trello
+                </p>
+                <p>
+                    Linux/Unix Bash | Python | Windows Powershell | VB for Applications | SQL | C++ | C | Java
+                </p>
+            </div>
+        </div>
+        <div id="sectionContact">
+            <h3 id="headerContact">Contact Me<hr width="200px" align="left"></h3>
+            <p><b>Please complete all the fields below:</b></p>
+            <form id="form1" name="form1" action="https://httpbin.org/post" method="POST">
+                <table id="tblContact">
+                    <tr>
+                        <td>Full Name: </td>
+                        <td width="20px"></td>
+                        <td></td>
+                        <td><input type="text" name="name" id="name"></label></td>
+                        <td><p id="userNameError" class="errorMsg"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="text" name="email" id="email"></label></td>
+                        <td><p id="emailError" class="errorMsg"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Address Line: </td>                        <td></td>
+                        <td></td>
+                        <td><input type="text" name="addr" id="addr"></label></td>
+                        <td><p id="addrError" class="errorMsg"></p></td>
+                    </tr>
+                    <tr>
+                        <td>City: </td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="text" name="city" id="city"></label></td>
+                        <td><p id="cityError" class="errorMsg"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Province: </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input list="provinces" id="province" name="province">
+                            <datalist id="provinces">
+                              <option value="AB">Alberta</option>
+                              <option value="BC">British Columbia</option>
+                              <option value="MB">Manitoba</option>
+                              <option value="NB">New Brunswick</option>
+                              <option value="NL">Newfoundland and Labrador</option>
+                              <option value="NT">Northwest Territories</option>
+                              <option value="NS">Nova Scotia</option>
+                              <option value="NU">Nunavut</option>
+                              <option value="ON" selected>Ontario</option>
+                              <option value="PE">Prince Edward Island</option>
+                              <option value="QC">Quebec</option>
+                              <option value="SK">Saskatchewan</option>
+                              <option value="YT">Yukon</option>
+                            </datalist>
+                        </td>
+                        <td><p id="provinceError" class="errorMsg"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Postal Code: </td>                        <td></td>
+                        <td></td>
+                        <td><input type="text" name="postal" id="postal"></td>
+                        <td><p id="postalError" class="errorMsg"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Subject Topic: </td>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="topic1" name="topic" value="1" checked>
+                        </td>
+                        <td>
+                            <label for="topic1">&emsp;Job Offer</label>
+                        </td>
+                        <td><p id="subjectError" class="errorMsg"></p></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="topic2" name="topic" value="2">
+                        </td>
+                        <td>
+                            <label for="topic2">&emsp;School</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="radio" id="topic3" name="topic" value="3">
+                        </td>
+                        <td>
+                            <label id="lblTopic3" for="topic3">&emsp;Others</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Message: </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <textarea id="message" name="message"></textarea>
+                        </td>
+                        <td><p id="msgError" class="errorMsg"></p></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm submission:</td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" id="confirm" name="confirm" value="1">
+                        </td>
+                        <td>Check to enable submit button</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table id="tblContactButtons">
+                    <tr>
+                        <td><input class="btnContact" type="submit" id="btnSubmit" value="Send message" disabled form="form1"></td>
+                        <td><input class="btnContact" type="button" id="btnClear" value="Clear all" form="form1"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+    <script src="./validate.js"></script>
+    <script src="./dynOther.js"></script>
+    <footer>2022 &#169; Kenneth Reforma</footer>
+</body>
+</html>
